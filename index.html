@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculadora Científica</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="history" id="history"></div>
+    <div class="controls">
+      <button class="toggleBtn" aria-label="Alternar Modo Escuro">
+        Dark Mode
+      </button>
+      <button class="toggleMode" aria-label="Alternar Modo Científico">
+        Modo Científico
+      </button>
+    </div>
+    <div class="calculator">
+      <div class="buttons">
+        <h2 id="value">0</h2>
+        <div class="standard-mode">
+          <button id="clear">C</button>
+          <button class="operator" data-value="/">/</button>
+          <button class="operator" data-value="*">×</button>
+          <button class="operator" data-value="-">-</button>
+          <button class="number" data-value="7">7</button>
+          <button class="number" data-value="8">8</button>
+          <button class="number" data-value="9">9</button>
+          <button class="operator" data-value="+">+</button>
+          <button class="number" data-value="4">4</button>
+          <button class="number" data-value="5">5</button>
+          <button class="number" data-value="6">6</button>
+          <button class="number" data-value="1">1</button>
+          <button class="number" data-value="2">2</button>
+          <button class="number" data-value="3">3</button>
+          <button class="number" data-value="0">0</button>
+          <button class="number" data-value=".">.</button>
+          <button id="equal">=</button>
+        </div>
+        <div class="scientific-mode hidden">
+          <button class="operator" data-value="sin">sin</button>
+          <button class="operator" data-value="cos">cos</button>
+          <button class="operator" data-value="tan">tan</button>
+          <button class="operator" data-value="sqrt">√</button>
+          <button class="operator" data-value="log">log</button>
+          <button class="operator" data-value="exp">e^x</button>
+          <button class="operator" data-value="pi">π</button>
+          <button class="operator" data-value="pow">x^y</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
